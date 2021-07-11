@@ -9,7 +9,7 @@ body {
 }
 
 body.dark {
-    background-color: #333;
+    background-color: #000;
     color: #fff;
 }
 /* main navbar style */
