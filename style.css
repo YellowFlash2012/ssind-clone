@@ -100,3 +100,98 @@ nav.nav-links ul li a {
     text-transform: uppercase;
     font-weight: bolder;
 }
+
+/* main styles */
+/* section #1 */
+section.section-one {
+    margin-top: 40px;
+}
+.section-one .container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+div.weekly-top-five {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.weekly-top-five h1 {
+    color: red;
+    text-transform: uppercase;
+}
+
+.underline {
+    height: 0.1em;
+    width: 100%;
+    background: #efefef;
+
+    margin: 25px 0;
+}
+
+div.one {
+    display: inline-flex;
+    
+}
+
+div.one img {
+    width: 60px;
+    height: 65px;
+    border-radius: 50%;
+    z-index: -1;
+    position: relative;
+}
+
+p.one {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+
+    position: absolute;
+    left: 382px;
+    top: 320px;
+}
+
+p.two {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+
+    position: absolute;
+    left: 382px;
+    top: 440px;
+}
+
+p.three {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+
+    position: absolute;
+    left: 382px;
+}
+
+p.four {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+
+    position: absolute;
+    left: 382px;
+}
+
+p.five {
+    color: #fff;
+    font-size: 2em;
+    font-weight: 900;
+
+    position: absolute;
+    left: 382px;
+}
+
+
+div.one h4 {
+    margin-left: 8px;
+    margin-top: 5px;
+}
