@@ -107,14 +107,16 @@ section.section-one {
     margin-top: 40px;
 }
 .section-one .container {
-    width: 1200px;
+    width: 1160px;
     margin: 0 auto;
+    display: flex;
 }
 
 div.weekly-top-five {
     display: flex;
     flex-direction: column;
-    width: 300px;
+    max-width: 300px;
+    margin-right: 1em;
 }
 
 .weekly-top-five h1 {
@@ -135,63 +137,112 @@ div.one {
     
 }
 
-div.one img {
+div.one-group {
+    position: relative;
+    width: 60px;
+    height: 65px;
+
+    margin-right: 2.7em;
+}
+
+div.one-group img {
     width: 60px;
     height: 65px;
     border-radius: 50%;
     z-index: -1;
-    position: relative;
+
+    position: absolute;
+    
 }
 
 p.one {
-    color: #fff;
+    color: #000;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: 382px;
-    top: 320px;
+    left: px;
+    top: px;
 }
 
 p.two {
-    color: #fff;
+    color: #000;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: 382px;
-    top: 440px;
+    left: px;
+    top: px;
 }
 
 p.three {
-    color: #fff;
+    color: #000;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: 382px;
+    left: px;
 }
 
 p.four {
-    color: #fff;
+    color: #000;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: 382px;
+    left: px;
 }
 
 p.five {
-    color: #fff;
+    color: #000;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: 382px;
+    left: px;
 }
 
+div.one i {
+    opacity: 0;
+    position: absolute;
+}
 
 div.one h4 {
     margin-left: 8px;
     margin-top: 5px;
+}
+
+div.one h4:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+/* news hub */
+div.news-hub {
+    width: 680px;
+}
+div.news-hub img {
+    width: 680px;
+    height: 500px;
+}
+
+div.news-hub h5 {
+    text-transform: uppercase;
+    color: red;
+
+}
+
+div.news-hub h5,
+div.news-hub h2,
+div.news-hub p {
+    margin: 1em 0;
+}
+
+.underline-vertical {
+    
+    height: 40em;
+    width: 0.1em;
+    background: #efefef;
+
+    margin: 0 1em;
 }
