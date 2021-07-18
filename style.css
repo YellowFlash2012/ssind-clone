@@ -342,3 +342,120 @@ p.author-info {
     color: gray;
     font-size: 12px;
 }
+
+/* section #3 */
+section.section-three {
+    background-color: #000;
+    color: #fff;
+    height: 350px;
+}
+
+.section-three h2 {
+    text-align: center;
+    font-size: 2em;
+    margin: 1em 0;
+    padding-top: 1.5em;
+}
+
+.section-three p {
+    font-size: 1.2em;
+    text-align: center;
+    margin: 0 0 1.5em 0;
+}
+
+form.optin {
+    display: block;
+    width: 900px;
+    margin: 2em auto;
+}
+
+input.email {
+    height: 4.2em;
+    width: 300px;
+    font-size: 1em;
+    outline: none;
+} 
+
+input.name {
+    height: 4.2em;
+    font-size: 1em;
+    width: 450px;
+    position: relative;
+    outline: none;
+}
+
+button.s3-btn {
+    padding: 1em;
+    position: absolute;
+    left: 1130px;
+    bottom: -898px;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+/* section #4 */
+div.s4-container {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em auto
+}
+
+h4.s4-cat {
+    text-transform: uppercase;
+    color: red;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+div.column-1 {
+    width: 590px;
+    
+}
+
+div.column-1 img {
+    width: 580px;
+}
+
+div.column-1 h2 {
+    font-size: 2.8em;
+    cursor: pointer;
+    margin-bottom: 1em;
+}
+
+div.column-1 h2:hover {
+    color: gray;
+}
+
+
+
+div.column-2, 
+div.column-3 {
+    width: 254px;
+}
+
+div.column-2 img,
+div.column-3 img {
+    width: 254px;
+    height: 190px;
+}
+
+div.hub-1 {
+    margin-bottom: 2em;
+}
+
+div.column-2 h2,
+div.column-3 h2 {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+div.column-2 h2:hover,
+div.column-3 h2:hover {
+    color: gray;
+}
