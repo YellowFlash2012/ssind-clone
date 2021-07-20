@@ -4,8 +4,11 @@ const img = document.querySelector('.one img');
 const p = document.querySelector('.one p');
 const arrowIcon = document.querySelector('.one i');
 
-fullDate.innerHTML = new Date().getFullYear();
+// full date setup
+fullDate.innerText = new Date().getFullYear();
+console.log(fullDate);
 
+//dark-light theme setup
 const themeChangeBtn = document.querySelector('.dark-light');
 const themeIcon = document.querySelector('.theme-icon');
 

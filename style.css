@@ -459,3 +459,276 @@ div.column-2 h2:hover,
 div.column-3 h2:hover {
     color: gray;
 }
+
+/* section #5 */
+
+div.s5-container {
+    display: flex;
+    width: 1200px;
+
+    margin: 3em auto;
+
+}
+
+div.left {
+    margin-right: 2em;
+    
+}
+
+div.left h2:nth-child(1) {
+    margin-bottom: 2em;
+    text-transform: uppercase;
+    color: red;
+    
+}
+
+div.global-hub {
+    width: 801px;
+    
+    margin-top: 1em;
+
+}
+
+div.article {
+    border: 1px solid #efefef;
+
+    padding-top: 2em;
+    padding-left: 1em;
+}
+
+
+div.global-hub-1,
+div.global-hub-2,
+div.global-hub-3 {
+    width: 759px;
+    height: 258px;
+
+    display: flex;
+}
+
+div.global-hub-1 img,
+div.global-hub-2 img,
+div.global-hub-3 img {
+    width: 252px;
+    height: 252px;
+
+    margin-right: 1.5em;
+}
+
+div.post-details h4 {
+    text-transform: uppercase;
+    color: red;
+    margin-bottom: 1.5em;
+}
+
+div.post-details h2 {
+    margin-bottom: 0.5em;
+}
+
+div.post-details p {
+    margin: 1.5em 0;
+}
+
+p.gray-date {
+    color: gray;
+}
+
+
+/* banner ad */
+div.banner-ad {
+    width: 300px;
+    height: 600px;
+    color: #fff;
+
+    
+    
+}
+div.banner-ad aside {
+    background-color: #f0555c;
+    width: 100%;
+    height: 100%;
+
+    padding: 2em 1em;
+}
+
+aside h2 {
+    font-size: 1.8em;
+}
+
+aside p {
+    margin: 2em 0;
+}
+
+aside span {
+    font-weight: bolder;
+    font-size: 1.2em;
+}
+
+img.uptrend {
+    width: 200px;
+    height: 200px;
+    display: block;
+    margin: 3em auto;
+}
+
+/* button section #5 */
+button.s5-btn {
+    cursor: pointer;
+
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+
+    background-color: #000;
+
+    padding: 1em 7.5em;
+
+    display: block;
+    margin: 1em auto;
+
+    border: 0;
+    outline: none;
+}
+
+button.s5-btn:hover {
+    background-color: #f0555c;
+}
+
+/* footer */
+
+footer {
+    background-color: #000;
+    border: 5px solid rgb(19, 18, 18);
+}
+
+div.footer-container {
+    color: #fff;
+    width: 1100px;
+
+    display: block;
+    margin: 0 auto;
+}
+
+footer div.optin {
+    text-align: center;
+}
+
+footer div.optin h2 {
+    
+    margin-top: 4em;
+    font-size: 2em;
+}
+
+
+footer div.optin p {
+    margin: 1em 0;    
+}
+
+footer input.name {
+    position: relative;
+}
+
+footer .s6-btn {
+    padding: 1em;
+    position: absolute;
+    left: 1130px;
+    
+    margin-top: 0.5em;
+    background-color: red;
+    border: 0;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bolder;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+div.logo p {
+    font-size: 0.4em;
+    font-weight: 100;
+    margin: 1em 0;
+}
+
+button.footer-btn {
+    background-color: red;
+    text-transform: uppercase;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.8em 1em;
+    border: 0;
+    font-weight: bold;
+}
+
+div.footer-menu .underline-vertical {
+    margin-right: 0;
+}
+
+div.footer-menu {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 2em;
+}
+
+div.footer-menu ul {
+    list-style-type: none;
+}
+
+div.footer-menu a {
+    text-decoration: none;
+    color: #fff;
+}
+
+div.menu-zone-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4em;
+
+    width: 25em;
+
+    margin-left: -8em;
+}
+
+div.menu-zone-1 li {
+    margin: 1em 0;
+}
+
+div.menu-zone-1 a:hover {
+    color: red;
+}
+
+li.head {
+    font-weight: bold;
+}
+
+div.menu-zone-2 {
+    margin-left: -7em;
+}
+
+ul.more li {
+    margin: 1em 0;
+}
+
+ul.more a:hover {
+    color: red;
+}
+
+div.footer-socials i {
+    margin-right: 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+footer .fa-twitter:hover {
+    color: aqua;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 0.2em;
+}
+
+p.copyright-text,
+p.copyright-text span {
+    color: #fff;
+    text-align: center;
+}
