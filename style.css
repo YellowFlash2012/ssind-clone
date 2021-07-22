@@ -19,6 +19,16 @@ nav.navbar-one {
     padding: 2em 0;
 }
 
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+
+    background: #fff;
+}
+
 div.socials i {
     margin: 0 0.5em;
     cursor: pointer;
@@ -725,6 +735,24 @@ footer .fa-twitter:hover {
     background-color: #fff;
     border-radius: 50%;
     padding: 0.2em;
+}
+
+a.back-top {
+    background: #fff;
+    font-weight: bold;
+    border-radius: 50px;
+    padding: 0.5em;
+    text-transform: capitalize;
+    border: 0;
+    outline: none;
+    text-decoration: none;
+    color: #000;
+
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+
+    visibility: hidden;
 }
 
 p.copyright-text,
