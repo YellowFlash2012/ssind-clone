@@ -6,6 +6,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
 }
 
 body.dark {
@@ -27,6 +28,8 @@ nav.navbar-one {
     z-index: 2;
 
     background: #fff;
+
+    box-shadow: 0px 5px 15px 0px;;
 }
 
 div.socials i {
@@ -111,6 +114,42 @@ nav.nav-links ul li a {
     font-weight: bolder;
 }
 
+button.open-hamburger-menu {
+    border: 0;
+    background: transparent;
+}
+
+button.close-hamburger-menu {
+    display: none;
+    border: 0;
+    background: transparent;
+}
+
+div.hamburger-menu {
+    display: none;
+    background-color: #000;
+    
+    transition: all 0.5s ease-in-out;
+
+}
+
+div.hamburger-menu-container {
+    display: grid;
+    margin-left: 24em;
+    grid-template-columns: 12em 12em 12em;
+    column-gap: 10em;
+    row-gap: 0;
+
+    padding: 2em 0;
+
+}
+
+div.hamburger-menu a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0.5em 0;
+}
+
 /* main styles */
 /* section #1 */
 section.section-one {
@@ -149,8 +188,10 @@ div.one {
 
 div.one-group {
     position: relative;
-    width: 60px;
-    height: 65px;
+    width: 170px;
+    height: 62px;
+    border-radius: 50%;
+    
 
     margin-right: 2.7em;
 }
@@ -159,62 +200,100 @@ div.one-group img {
     width: 60px;
     height: 65px;
     border-radius: 50%;
-    z-index: -1;
 
+    position: absolute; 
+    z-index: -1;   
+}
+
+div.one-group::after {
+    content: '';
     position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    /* z-index: -1; */
 }
 
 p.one {
-    color: #000;
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: px;
-    top: px;
+    z-index: 1;
+    left: 0.5em;
+    top: 0.3em;
+
+    transition: transform 0.3s;
 }
 
 p.two {
-    color: #000;
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: px;
-    top: px;
+
+    z-index: 1;
+    left: 0.5em;
+    top: 0.3em;
+
+    transition: transform 0.3s;
 }
 
 p.three {
-    color: #000;
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: px;
+    z-index: 1;
+    left: 0.6em;
+    top: 0.3em;
+
+    transition: transform 0.3s;
 }
 
 p.four {
-    color: #000;
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: px;
+    z-index: 1;
+    left: 0.5em;
+    top: 0.3em;
+
+    transition: transform 0.3s;
 }
 
 p.five {
-    color: #000;
+    color: #fff;
     font-size: 2em;
     font-weight: 900;
 
     position: absolute;
-    left: px;
+    z-index: 1;
+    left: 0.6em;
+    top: 0.3em;
+
+    transition: transform 0.3s;
 }
 
-div.one i {
+div.one-group i {
     opacity: 0;
     position: absolute;
+    left: 1.3em;
+    top: 1.3em;
+    color: #fff;
+    
+    z-index: 1;
+
+    transition: transform 0.3s;
 }
 
 div.one h4 {
@@ -246,6 +325,10 @@ div.news-hub h5,
 div.news-hub h2,
 div.news-hub p {
     margin: 1em 0;
+}
+
+p.daily-date {
+    color: gray;
 }
 
 .underline-vertical {
@@ -377,6 +460,8 @@ form.optin {
     display: block;
     width: 900px;
     margin: 2em auto;
+
+    position: relative;
 }
 
 input.email {
@@ -390,15 +475,16 @@ input.name {
     height: 4.2em;
     font-size: 1em;
     width: 450px;
-    position: relative;
+    position: absolute;
     outline: none;
 }
 
 button.s3-btn {
     padding: 1em;
     position: absolute;
-    left: 1130px;
-    bottom: -898px;
+    left: 35em;
+    top: 0.5em;
+    
     background-color: red;
     border: 0;
     color: #fff;
@@ -539,20 +625,20 @@ div.post-details p {
     margin: 1.5em 0;
 }
 
-p.gray-date {
-    color: gray;
-}
-
 
 /* banner ad */
 div.banner-ad {
     width: 300px;
     height: 600px;
     color: #fff;
-
-    
-    
 }
+
+.fixed-banner-ad {
+    position: fixed;
+    right: 26rem;
+    bottom: 5rem;
+}
+
 div.banner-ad aside {
     background-color: #f0555c;
     width: 100%;
@@ -622,6 +708,7 @@ div.footer-container {
 
 footer div.optin {
     text-align: center;
+    
 }
 
 footer div.optin h2 {
@@ -635,14 +722,25 @@ footer div.optin p {
     margin: 1em 0;    
 }
 
-footer input.name {
+footer form.optin {
+    
     position: relative;
+    
 }
 
-footer .s6-btn {
+footer input.email {
+    margin-left: -29em;
+}
+
+footer input.name {
+    position: absolute;
+    width: 400px;
+}
+
+.s6-btn {
     padding: 1em;
     position: absolute;
-    left: 1130px;
+    left: 630px;
     
     margin-top: 0.5em;
     background-color: red;
@@ -751,6 +849,8 @@ a.back-top {
     position: fixed;
     bottom: 3rem;
     right: 3rem;
+
+    transition: all 1s ease;
 
     visibility: hidden;
 }
