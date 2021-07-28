@@ -36,6 +36,8 @@ const hamburgerMenu = document.querySelector('.hamburger-menu');
 
 const oneGroups = [...document.querySelectorAll('.one-group')];
 
+const visual = document.querySelector('.news-hub-visual');
+const imgOverlay = document.querySelector('.img-overlay');
 
 const img = document.querySelector('.one-group img');
 const p = [...document.querySelectorAll('.one-group p')];
@@ -149,4 +151,17 @@ window.addEventListener('scroll', () => {
     } else {
         stickyBanner.classList.remove('fixed-banner-ad');
     }
+})
+
+//news hub img modal effect setup
+visual.addEventListener('mouseover', () => {
+    
+    imgOverlay.style.visibility = 'visible';
+    
+})
+
+visual.addEventListener('mouseout', () => {
+    
+    imgOverlay.style.visibility = 'hidden';
+    
 })
