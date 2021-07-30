@@ -16,8 +16,10 @@ body.dark {
 /* main navbar style */
 nav.navbar-one {
     display: flex;
-    justify-content: space-evenly;
-    padding: 2em 0;
+    text-align: center;
+    
+    padding: 2em 0em 2em 23em;
+
 }
 
 .fixed-nav {
@@ -45,11 +47,15 @@ div.logo {
     font-family: arial;
     font-size: 3em;
     font-weight: bolder;
+    margin-left: 4em;
+    
 }
 
 div.date {
     display: inline-flex;
     height: 2.5em;
+
+    margin-left: 8em;
     
 }
 
@@ -155,6 +161,7 @@ div.hamburger-menu a {
 section.section-one {
     margin-top: 40px;
 }
+
 .section-one .container {
     width: 1160px;
     margin: 0 auto;
@@ -315,6 +322,11 @@ div.news-hub-visual {
     position: relative;
 }
 
+div.news-hub-visual:hover .img-overlay {
+    opacity: 1;
+    z-index: 1;
+}
+
 div.news-hub-visual img {
     width: 620px;
     height: 500px;
@@ -330,8 +342,8 @@ div.img-overlay {
     display: grid;
     place-items: center;
     
-    visibility: hidden;
-    /* z-index: -10;  */
+    opacity: 0;
+    
  }
 
 
@@ -445,6 +457,34 @@ div.top-news-three {
 div.top-news img {
     width: 366px;
     height: 206px;
+}
+
+div.read-more {
+    position: relative;
+}
+
+div.read-more:hover .img-overlay-zone-2 {
+    opacity: 1;
+    z-index: 1;
+}
+
+div.img-overlay-zone-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    
+    opacity: 0;
+    
+}
+
+div.img-overlay-zone-2 a {
+    color: #fff;
+    font-weight: bold;
 }
 
 div.top-news h3:hover {
@@ -580,6 +620,38 @@ div.column-3 h2 {
 div.column-2 h2:hover,
 div.column-3 h2:hover {
     color: gray;
+}
+
+div.column-3 div.hub-1 {
+    margin-bottom: 4em;
+}
+
+div.read-more {
+    position: relative;
+}
+
+div.read-more:hover .img-overlay-zone-3 {
+    opacity: 1;
+    z-index: 1;
+}
+
+div.img-overlay-zone-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(73, 166, 233, 0.5);
+    display: grid;
+    place-items: center;
+    
+    opacity: 0;
+    
+}
+
+div.img-overlay-zone-3 a {
+    color: #fff;
+    font-weight: bold;
 }
 
 /* section #5 */
@@ -779,8 +851,14 @@ footer input.name {
     cursor: pointer;
 }
 
-div.logo p {
-    font-size: 0.4em;
+address.logo h4 {
+    font-family: arial;
+    font-size: 3em;
+    font-weight: bolder;
+}
+
+address.logo p {
+    font-size: 1.4em;
     font-weight: 100;
     margin: 1em 0;
 }
@@ -803,6 +881,8 @@ div.footer-menu {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     gap: 2em;
+    padding-left: 0;
+
 }
 
 div.footer-menu ul {
@@ -869,7 +949,7 @@ a.back-top {
     bottom: 3rem;
     right: 3rem;
 
-    transition: all 1s ease;
+    transition: 1s;
 
     visibility: hidden;
 }

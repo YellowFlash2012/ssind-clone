@@ -34,10 +34,7 @@ const OpenHamburgerBtn = document.querySelector('.open-hamburger-menu');
 const closeHamburgerMenu = document.querySelector('.close-hamburger-menu');
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 
-const oneGroups = [...document.querySelectorAll('.one-group')];
 
-const visual = document.querySelector('.news-hub-visual');
-const imgOverlay = document.querySelector('.img-overlay');
 
 const img = document.querySelector('.one-group img');
 const p = [...document.querySelectorAll('.one-group p')];
@@ -74,10 +71,10 @@ themeChangeBtn.addEventListener('click', () => {
 //fixed-navbar
 window.addEventListener('scroll', () => {
     const navHeight = header.getBoundingClientRect().height;
-    console.log(navHeight);
+    // console.log(navHeight);
 
     const scrollHeight = window.pageYOffset;
-    console.log(scrollHeight);
+    // console.log(scrollHeight);
 
     if (scrollHeight > navHeight) {
         header.classList.add('fixed-nav');
@@ -153,15 +150,3 @@ window.addEventListener('scroll', () => {
     }
 })
 
-//news hub img modal effect setup
-visual.addEventListener('mouseover', () => {
-    
-    imgOverlay.style.visibility = 'visible';
-    
-})
-
-visual.addEventListener('mouseout', () => {
-    
-    imgOverlay.style.visibility = 'hidden';
-    
-})
