@@ -171,8 +171,9 @@ section.section-one {
 div.weekly-top-five {
     display: flex;
     flex-direction: column;
-    max-width: 300px;
+    width: 300px;
     margin-right: 1em;
+
 }
 
 .weekly-top-five h1 {
@@ -189,52 +190,58 @@ div.weekly-top-five {
 }
 
 div.one {
-    display: inline-flex;
-    
+    display: flex;
+    justify-content: space-between;
 }
 
 div.one-group {
     position: relative;
-    width: 170px;
-    height: 62px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     
 
-    margin-right: 2.7em;
+    margin-right: 0.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 div.one-group img {
-    width: 60px;
+    width: 65px;
     height: 65px;
     border-radius: 50%;
 
     position: absolute; 
-    z-index: -1;   
+    z-index: -1;
+       
 }
+
 
 div.one-group::after {
     content: '';
     position: absolute;
     top: 0;
+    right: 0;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 100%;
     
     background: rgba(0, 0, 0, 0.5);
     border-radius: 50%;
-    /* z-index: -1; */
+    
 }
+
 
 p.one {
     color: #fff;
     font-size: 2em;
     font-weight: 900;
 
-    position: absolute;
     z-index: 1;
-    left: 0.5em;
-    top: 0.3em;
-
+    
     transition: transform 0.3s;
 }
 
@@ -246,8 +253,6 @@ p.two {
     position: absolute;
 
     z-index: 1;
-    left: 0.5em;
-    top: 0.3em;
 
     transition: transform 0.3s;
 }
@@ -259,9 +264,7 @@ p.three {
 
     position: absolute;
     z-index: 1;
-    left: 0.6em;
-    top: 0.3em;
-
+    
     transition: transform 0.3s;
 }
 
@@ -272,8 +275,7 @@ p.four {
 
     position: absolute;
     z-index: 1;
-    left: 0.5em;
-    top: 0.3em;
+    
 
     transition: transform 0.3s;
 }
@@ -285,9 +287,7 @@ p.five {
 
     position: absolute;
     z-index: 1;
-    left: 0.6em;
-    top: 0.3em;
-
+    
     transition: transform 0.3s;
 }
 
@@ -304,7 +304,8 @@ div.one-group i {
 }
 
 div.one h4 {
-    margin-left: 8px;
+    width: 160px;
+    
     margin-top: 5px;
 }
 
