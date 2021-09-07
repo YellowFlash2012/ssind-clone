@@ -91,53 +91,22 @@ window.addEventListener('scroll', () => {
 
 //hamburger menu
 OpenHamburgerBtn.addEventListener('click', () => {
+    
     hamburgerMenu.style.display = 'block';
-    OpenHamburgerBtn.innerHTML = `<i class="fas fa-times fa-2x"></i>`;
+    OpenHamburgerBtn.style.display = 'none';
+    closeHamburgerMenu.style.display = 'block';
     
 });
 
 closeHamburgerMenu.addEventListener('click', () => {
-    console.log(closeHamburgerMenu);
+    
     hamburgerMenu.style.display = 'none';
-    closeHamburgerMenu.innerHTML = `<i class="fas fa-bars fa-2x"></i>`;
+    closeHamburgerMenu.style.display = 'none';
+    OpenHamburgerBtn.style.display = 'block';
 });
 
 //weekly-top-5 img dynamic transition of num & arrow setup
-oneGroups.forEach((item) => {
-    item.addEventListener('mouseenter', (e) => {
-        if (e.target === item) {
-            p.forEach((item) => {
-                item.style.transform = 'translateY(-290px)';
-            
-        });
-        
-            arrowIcon.forEach((item) => {
-                item.style.transform = 'translateY(2px)';
-                item.style.opacity = '1';
-            });
-        }
-        // p.forEach((item) => {
-        //     item.style.transform = 'translateY(-290px)';
-            
-        // });
-        
-        // arrowIcon.forEach((item) => {
-        //     item.style.transform = 'translateY(2px)';
-        //     item.style.opacity = '1';
-        // });
-        
-    });
 
-    item.addEventListener('mouseleave', () => {
-        p.forEach((item) => {
-            item.style.transform = 'translateY(0px)';
-        });
-        
-        arrowIcon.forEach((item) => {
-            item.style.opacity = '0';
-        });
-    })
-});
 
 //sticky banner ad setup
 window.addEventListener('scroll', () => {
