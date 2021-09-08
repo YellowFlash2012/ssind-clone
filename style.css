@@ -129,6 +129,7 @@ nav.nav-links ul li a {
 button.open-hamburger-menu {
     border: 0;
     background: transparent;
+    transition: display 0.8s ease;
 }
 
 button.close-hamburger-menu {
@@ -141,7 +142,7 @@ div.hamburger-menu {
     display: none;
     background-color: #000;
     
-    transition: all 0.5s ease-in-out;
+    transition: display 0.9s linear;
 
 }
 
